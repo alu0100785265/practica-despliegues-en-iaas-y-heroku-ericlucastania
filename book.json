@@ -1,0 +1,11 @@
+
+{
+  "root": "txt",
+  "gitbook": ">=3.0.0",
+  "plugins": ["youtube","bootstrap-callout","facebook","mcqx"],
+  "pluginsConfig": {
+    "facebook": {
+        "appKey": "1143971855647953"
+    }
+  }
+}
