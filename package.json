@@ -31,12 +31,14 @@
   "homepage": "https://github.com/enten/gitbook-boilerplate#readme",
   "devDependencies": {
     "async": "^1.4.0",
+    "express-ejs-layouts": "^2.2.0",
     "fs-extra": "^0.22.1",
     "gh-pages": "^0.3.1np",
     "gitbook": "^2.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^2.2.0",
     "gulp-shell": "^0.5.2",
+    "express-ejs-layouts": "^2.2.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
