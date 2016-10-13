@@ -1,7 +1,7 @@
 //GULP
 var gulp  = require('gulp');
 var shell = require('gulp-shell');
-var git = require('gulp-git');
+//var git = require('gulp-git');
  
 var paths = {
   
@@ -27,7 +27,7 @@ gulp.task('deploy',shell.task([
   'npm run deploy'
 ]));
 
-
+/*
 
 gulp.task('add', function() {
   console.log('adding...');
@@ -54,7 +54,7 @@ gulp.task('gitsend', function() {
   runSequence('add', 'commit', 'push');
 });
 
-
+*/
 gulp.task('build',shell.task([
   'npm run build'
 ]));
