@@ -6,7 +6,8 @@
 
 > ![](icons/gitbook.PNG)
 
-> ### ¿Qué es?  
+
+> ### ¿Qué es? 
 
 
 > Gitbook es una herramienta que nos permite crear libros y
@@ -27,7 +28,7 @@ la creación o asociarla con Github o alguna otra plataforma. Es interesante
 asociarla con Github para documentar proyectos ya que tendrás acceso a los
 distintos repositorios de tu cuenta. Pudiendo documentar así el que más te pueda interesar.
     
-> ***2. Creación de un libro***
+> ***2.. Creación de un libro***
 
 > Una vez dentro de la página tendremos la opción de crear nuestra documentación
 para ello tendremos que elegir un título y un modo. Que podrá ser enlazando el
