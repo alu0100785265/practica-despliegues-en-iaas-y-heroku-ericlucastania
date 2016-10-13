@@ -3,7 +3,7 @@
 CMDDESC="Generate GitBook"
 
 
-#gitbook build `pwd` ./gh-pages
+
 
 ssh usuario@10.6.128.159 'cd /home/usuario/Sytw/Styw3;git pull'
 
