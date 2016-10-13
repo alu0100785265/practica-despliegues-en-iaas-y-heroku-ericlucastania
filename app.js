@@ -1,30 +1,10 @@
-var express = require('express');
-var app = express();
-
-
-app.set('port', (process.env.PORT || 8080));
-
-//app.use(express.static(__dirname + '/gh-pages'));
-
-// views is directory for all template files
-app.set('gh-pages', __dirname + '/gh-pages');
-app.set('view engine', 'ejs');
-
-app.get('/', function(request, response) {
-  response.render('gh-pages/index');
-});
-
-app.listen(app.get('port'), function() {
-  console.log('Node app corriendose toda en el puerto', app.get('port'));
-});
-
 "use strict";
 
 var express = require('express');
 var app = express();
 var  path = require('path');
 var  expressLayouts = require('express-ejs-layouts');
-var exec= require('child_process').exec;
+var exec = require('child_process').exec;
 
 
 
@@ -40,6 +20,21 @@ app.use(express.static('gh-pages'));
 app.get('/', (request, response) => {
   response.send('index');  
 });
+
+
+app.post('/synchronize', (request, response) => {
+     function puts(error, stdout, stderr){
+        console.log(stdout);
+        if(error){
+          console.log(error);
+          
+        }
+     }
+     
+    exec("git pull",puts);
+});
+
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app corriendose toda en el puerto', app.get('port'));
