@@ -31,7 +31,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      
-    exec("npm run deploy",puts);
+    exec("git pull git@github.com:ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git master",puts);
 });
 
 
