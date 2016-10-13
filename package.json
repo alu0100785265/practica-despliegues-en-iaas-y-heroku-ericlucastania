@@ -30,6 +30,9 @@
   },
   "homepage": "https://github.com/enten/gitbook-boilerplate#readme",
   "devDependencies": {
+    "async": "^1.4.0"
+  },
+  "dependencies": {
     "async": "^1.4.0",
     "express-ejs-layouts": "^2.2.0",
     "fs-extra": "^0.22.1",
@@ -39,9 +42,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-shell": "^0.5.2",
     "express-ejs-layouts": "^2.2.0",
-    "nodemon": "^1.11.0"
-  },
-  "dependencies": {
+    "nodemon": "^1.11.0",
     "express": "^4.14.0",
     "gitbook-plugin-tocstyles": "0.0.1",
     "gulp": "^3.9.1",
