@@ -4,4 +4,4 @@ exec("git pull ",puts(error, stdout, stderr) {
     })
   },
   var exec= require('child_process').exec
-  app.use(express.static(__dirname))
+  app.use(express.static(__dirname, 'gh-pages'))

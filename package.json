@@ -2,7 +2,7 @@
   "name": "gitbook-boilerplate",
   "version": "0.0.1",
   "description": "GitBook Boilerplate",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "generate-gitbook": "./scripts/losh generate-gitbook",
     "generate-wiki": "./scripts/losh generate-wiki",
