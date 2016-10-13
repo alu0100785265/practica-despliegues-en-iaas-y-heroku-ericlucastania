@@ -31,7 +31,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      
-    exec("web: node app.js",puts);
+    exec("node app.js",puts);
 });
 
 
