@@ -31,7 +31,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      //heroku buildpacks
-    exec("git pull",puts);
+    exec("heroku login",puts);
 });
 
 
