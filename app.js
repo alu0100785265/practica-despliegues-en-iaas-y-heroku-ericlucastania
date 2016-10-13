@@ -5,6 +5,16 @@ var app = express();
 var  path = require('path');
 var  expressLayouts = require('express-ejs-layouts');
 var exec = require('child_process').exec;
+var WebHooks = require('node-webhooks');
+ 
+var webHooks = new WebHooks({
+    db: './webHooksDB.json', // json file that store webhook URLs 
+});
+webHooks.add('prueba', 'https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania/').then(function(){
+  //child_process.exec(git pull); 
+}).catch(function(err){
+    console.log(err);
+});
 
 
 
@@ -31,7 +41,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      //heroku buildpacks
-    exec("heroku login",puts);
+    exec("git pull origin master",puts);
 });
 
 
