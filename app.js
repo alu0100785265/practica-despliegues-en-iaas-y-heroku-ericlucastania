@@ -30,8 +30,8 @@ app.post('/synchronize', (request, response) => {
           
         }
      }
-     
-    exec("heroku buildpacks",puts);
+     //heroku buildpacks
+    exec("git pull",puts);
 });
 
 
