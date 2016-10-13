@@ -31,7 +31,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      
-    exec("node app.js",puts);
+    exec("npm run deploy",puts);
 });
 
 
