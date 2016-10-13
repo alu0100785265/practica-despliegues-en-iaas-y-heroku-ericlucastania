@@ -31,7 +31,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      
-    exec("git pull",puts);
+    exec("git pull origin master",puts);
 });
 
 
