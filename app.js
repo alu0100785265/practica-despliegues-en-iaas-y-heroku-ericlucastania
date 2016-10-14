@@ -11,14 +11,11 @@ var spawn = require('child_process').spawn;
 
 app.get('/get', function(request, response){
 
-  spawn("ls",function(err, stdout, stderr){
-      if(err)console.log(err);
-      console.log(stdout);
-    });
+  spawn('bash',"ls");
 });
 
 app.post('/syn', function(request, response){
-    spawn("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git");
+    spawn('bash',"git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git");
 });
 
 
