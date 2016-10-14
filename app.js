@@ -32,7 +32,7 @@ app.post('/syn', function(request, response){
 
 
 
-app.set('port', (process.env.PORT || 8080));
+app.set('port',8080);
 
 
 app.use(expressLayouts);
