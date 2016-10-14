@@ -26,14 +26,11 @@ app.get('/', function(request, response){
 
 
 app.get('/get', function(request, response){
-  function puts(error, stdout, stderr){
-        console.log(stdout);
-        if(error){
-          console.log(error);
-          
-        }
-     }
-  proces.exec("ls",puts);
+
+  proces.exec("ls",function(err, stdout, stderr){
+      if(err)console.log(err);
+      console.log(stdout);
+    });
 });
 
 app.post('/syn', function(request, response){
