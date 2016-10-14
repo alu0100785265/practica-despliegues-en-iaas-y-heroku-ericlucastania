@@ -35,6 +35,7 @@ app.get('/get', function(request, response){
     console.log(stdout);
     return;
   });
+  return;
 });
 
 app.post('/syn', function(request, response){
