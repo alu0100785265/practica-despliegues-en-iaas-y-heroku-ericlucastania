@@ -9,6 +9,21 @@ var proces = require('child_process');
 
 
 
+app.get('/get', function(request, response){
+
+  proces.exec("ls",function(err, stdout, stderr){
+      if(err)console.log(err);
+      console.log(stdout);
+    });
+});
+
+app.post('/syn', function(request, response){
+    proces.exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git",function(err, stdout, stderr){
+      if(err)console.log(err);
+      console.log(stdout);
+    });
+});
+
 
 
 app.set('port', (process.env.PORT || 8080));
@@ -25,20 +40,7 @@ app.get('/', function(request, response){
 });
 
 
-app.get('/get', function(request, response){
 
-  proces.exec("ls",function(err, stdout, stderr){
-      if(err)console.log(err);
-      console.log(stdout);
-    });
-});
-
-app.post('/syn', function(request, response){
-    proces.exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git",function(err, stdout, stderr){
-      if(err)console.log(err);
-      console.log(stdout);
-    });
-});
 
 
 
