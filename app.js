@@ -20,12 +20,12 @@ app.use(expressLayouts);
 app.use(express.static('gh-pages'));
 
 
-app.get('/', (request, response) => {
+app.get('/', function(request, response){
   response.send('index');  
 });
 
 
-app.post('/get', (request, response) => {
+app.post('/get', function(request, response){
   function puts(error, stdout, stderr){
         console.log(stdout);
         if(error){
@@ -36,7 +36,7 @@ app.post('/get', (request, response) => {
   exec("ls",puts);
 });
 
-app.post('/synchronize', (request, response) => {
+app.post('/synchronize', function(request, response){
      function puts(error, stdout, stderr){
         console.log(stdout);
         if(error){
