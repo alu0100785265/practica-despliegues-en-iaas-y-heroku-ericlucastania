@@ -34,7 +34,7 @@ app.post('/synchronize', (request, response) => {
         }
      }
      //heroku buildpacks
-    exec("git pull origin master",puts);
+    exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git master",puts);
 });
 
 
