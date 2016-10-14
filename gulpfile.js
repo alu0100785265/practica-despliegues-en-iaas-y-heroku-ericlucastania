@@ -1,7 +1,7 @@
 //GULP
 var gulp  = require('gulp');
 var shell = require('gulp-shell');
-//var git = require('gulp-git');
+var git = require('gulp-git');
  
 var paths = {
   
@@ -27,34 +27,11 @@ gulp.task('deploy',shell.task([
   'npm run deploy'
 ]));
 
-/*
 
-gulp.task('add', function() {
-  console.log('adding...');
-  return gulp.src('.')
-    .pipe(git.add());
-});
 
-gulp.task('commit', function() {
-  console.log('commiting');
-  if (argv.m) {
-    return gulp.src('.')
-      .pipe(git.commit(argv.m));
-  }
-});
 
-gulp.task('push', function(){
-  console.log('pushing...');
-  git.push('origin', 'master', function (err) {
-    if (err) throw err;
-  });
-});
 
-gulp.task('gitsend', function() {
-  runSequence('add', 'commit', 'push');
-});
 
-*/
 gulp.task('build',shell.task([
   'npm run build'
 ]));
