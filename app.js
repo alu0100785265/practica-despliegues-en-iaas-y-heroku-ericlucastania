@@ -25,7 +25,7 @@ app.get('/', (request, response) => {
 });
 
 
-app.get('/get', (request, response) => {
+app.post('/get', (request, response) => {
   function puts(error, stdout, stderr){
         console.log(stdout);
         if(error){
