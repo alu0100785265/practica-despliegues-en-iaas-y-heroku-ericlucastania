@@ -26,16 +26,26 @@ app.get('/', function(request, response){
 
 
 app.get('/get', function(request, response){
-
+  var x;
+  proces.exec('timeout 15', (err, stdout, stderr) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      console.log(stdout);
+    });
+  
+  
   proces.exec("ls", (err, stdout, stderr) => {
+    
     if (err) {
       console.error(err);
       return;
     }
-    console.log(stdout);
+    x = console.log(stdout);
     return;
   });
-  return;
+  return x;
 });
 
 app.post('/syn', function(request, response){
