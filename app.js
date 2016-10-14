@@ -5,18 +5,30 @@ var express = require('express');
 var app = express();
 var  path = require('path');
 var  expressLayouts = require('express-ejs-layouts');
-var spawn = require('child_process').spawn;
+var process = require('child_process');
 
 
 
 app.get('/get', function(request, response){
 
-  spawn('bash',"ls");
+  process.exec("ls", (err, stdout, stderr) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        console.log(stdout);
+      });
 });
 
 app.post('/syn', function(request, response){
-    spawn('bash',"git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git");
-});
+    process.exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git", (err, stdout, stderr) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        console.log(stdout);
+      });
+  });
 
 
 
