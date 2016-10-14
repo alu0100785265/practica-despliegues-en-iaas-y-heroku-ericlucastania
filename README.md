@@ -15,7 +15,13 @@ Automatizar la subida de ficheros al iaas y heroku cada vez que se haga un push 
 
 
 ## Componentes del grupo de trabajo
-Componentes
+
 * [Eric Ramos](https://github.com/alu0100786330)
 * [Lucas Ruiz](https://github.com/alu0100785265)
 * [Tania González](https://github.com/tania77)
+
+## Enlaces de interes
+
+* [Enlace a la aplicación desplegada en Heroku]
+* [Enlace a la aplicación en el iaas]
+* [Enlace a gitbook]
