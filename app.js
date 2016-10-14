@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 var  path = require('path');
 var  expressLayouts = require('express-ejs-layouts');
-var exec = require('child_process').exec;
+var proces = require('child_process');
 
 
 
@@ -25,7 +25,7 @@ app.get('/', function(request, response){
 });
 
 
-app.post('/get', function(request, response){
+app.get('/get', function(request, response){
   function puts(error, stdout, stderr){
         console.log(stdout);
         if(error){
@@ -33,19 +33,14 @@ app.post('/get', function(request, response){
           
         }
      }
-  exec("ls",puts);
+  proces.exec("ls",puts);
 });
 
-app.post('/synchronize', function(request, response){
-     function puts(error, stdout, stderr){
-        console.log(stdout);
-        if(error){
-          console.log(error);
-          
-        }
-     }
-     //heroku buildpacks
-    exec("rm -rf *;rm -rf .*;git clone https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git .",puts);
+app.post('/syn', function(request, response){
+    proces.exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git",function(err, stdout, stderr){
+      if(err)console.log(err);
+      console.log(stdout);
+    });
 });
 
 
