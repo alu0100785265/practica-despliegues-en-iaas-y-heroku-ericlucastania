@@ -1,5 +1,6 @@
 ## Desplegando una aplicación en Heroku e iaas
 
+
 # Descripción
 
 Automatizar la subida de ficheros al iaas y heroku cada vez que se haga un push al repo.
@@ -14,7 +15,7 @@ Automatizar la subida de ficheros al iaas y heroku cada vez que se haga un push 
 
 
 ## Componentes del grupo de trabajo
-
+Componentes
 * [Eric Ramos](https://github.com/alu0100786330)
 * [Lucas Ruiz](https://github.com/alu0100785265)
 * [Tania González](https://github.com/tania77)
