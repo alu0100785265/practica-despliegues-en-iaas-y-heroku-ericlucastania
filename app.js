@@ -25,6 +25,17 @@ app.get('/', (request, response) => {
 });
 
 
+app.get('/get', (request, response) => {
+  function puts(error, stdout, stderr){
+        console.log(stdout);
+        if(error){
+          console.log(error);
+          
+        }
+     }
+  exec("ls",puts);
+});
+
 app.post('/synchronize', (request, response) => {
      function puts(error, stdout, stderr){
         console.log(stdout);
