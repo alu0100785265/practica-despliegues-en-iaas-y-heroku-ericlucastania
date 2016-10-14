@@ -37,12 +37,22 @@ app.get('/get', function(request, response){
 });
 
 app.post('/syn', function(request, response){
+    /*proces.exec('timeout 15', (err, stdout, stderr) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      console.log(stdout);
+    });*/
+    
+    
     proces.exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git", (err, stdout, stderr) => {
       if (err) {
         console.error(err);
         return;
       }
       console.log(stdout);
+      return;
     });
 });
 
