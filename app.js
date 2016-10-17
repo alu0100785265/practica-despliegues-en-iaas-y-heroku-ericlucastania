@@ -41,7 +41,7 @@ app.get('/get', function(request, response){
 
 app.post('/syn', function(request, response){
     var k;
-    proces.exec("git pull https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git master", (err, stdout, stderr) => {
+    proces.exec("git pull origin master", (err, stdout, stderr) => {
       if (err) {
         console.error(err);
         return;
