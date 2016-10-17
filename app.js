@@ -48,7 +48,7 @@ app.post('/syn', function(request, response){
       }
       k = console.log(stdout);
     });
-    response(k);
+    response.send(k);
 });
 
 
