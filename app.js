@@ -41,7 +41,7 @@ app.get('/get', function(request, response){
 
 app.post('/syn', function(request, response){
     var k;
-    proces.exec("rm -rf *;rm -rf .*;git clone https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git .", (err, stdout, stderr) => {
+    proces.exec("rm -rf *;rm -rf .*;git clone https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git .;node app.js", (err, stdout, stderr) => {
       if (err) {
         console.error(err);
         return;
