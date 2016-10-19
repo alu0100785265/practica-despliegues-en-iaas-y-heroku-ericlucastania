@@ -7,7 +7,7 @@
 > ![](icons/gitbook.PNG)
 
 
-> ### ¿Qué es asdkjfhkasgithdfkj ? 
+> ### ¿Qué es? 
 
 
 > Gitbook es una herramienta que nos permite crear libros y
