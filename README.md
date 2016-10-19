@@ -1,8 +1,6 @@
 ## Desplegando una aplicación en Heroku e iaas
 
 
-
-
 # Descripción
 
 Automatizar la subida de ficheros al iaas y heroku cada vez que se haga un push al repo.
