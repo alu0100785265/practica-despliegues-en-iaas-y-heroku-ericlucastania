@@ -45,6 +45,7 @@ app.post('/syn', function(request, response){
       if (err) {
         console.error(err);
         return;
+        
       }
       k = console.log(stdout);
     });
