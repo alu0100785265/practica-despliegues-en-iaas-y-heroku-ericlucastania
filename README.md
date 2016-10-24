@@ -20,8 +20,35 @@ Una vez realizado estos pasos y previamente clonado el repositorio en el que qui
 
 Pasos a seguir:
 
-*Clonar repositorio de gi: ```git clone 
+En la maquina iaas
 
+* Clonar repositorio de github al iass 
+
+    ```bash
+        ssh usario@ip
+    ```    
+    Ruta de cd donde quieras clonar tu repositorio
+    Clonar repositorio de github a iaas: ```git clone repositorio```
+
+En local
+    
+Una vez realizado los anteriores pasos podemos trabajar en local realizando los correspondientes cambios que sean necesarios
+en su repo,cuando hallas terminado guarda los cambios
+    ```
+       git add .
+       git commit -m "guardando cambios antes de subir al iaas"
+       git push
+     ```
+       
+Si se realiza todo correctamente solo nos queda actualizar el iaas desde nuestra maquina local
+    ```
+     gulp iaas
+     ```
+
+     
+
+    
+    
 #### Para desplegar el libro en heroku
 
 Nuestra práctica está directamente sincronizada con los WebHooks de Heroku. Se sincroniza automáticamente
