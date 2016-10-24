@@ -20,7 +20,7 @@ Una vez realizado estos pasos y previamente clonado el repositorio en el que qui
 
 Pasos a seguir:
 
-#### En la maquina iaas
+### En la maquina iaas
 
 * Clonar repositorio de github al iass 
 
@@ -49,7 +49,7 @@ Si se realiza todo correctamente solo nos queda actualizar el iaas desde nuestra
 
     
     
-#### Para desplegar el libro en heroku
+### Desplegar el libro en heroku
 
 Nuestra práctica está directamente sincronizada con los WebHooks de Heroku. Se sincroniza automáticamente
 pero si deseas que tu práctica esté sincronizada con tu repositorio de Heroku deberás 
