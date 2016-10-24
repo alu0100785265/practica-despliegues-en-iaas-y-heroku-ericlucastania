@@ -25,30 +25,17 @@ app.get('/', function(request, response){
 });
 
 
-app.get('/get', function(request, response){
-  var x;
-  proces.exec("ls", (err, stdout, stderr) => {
-    
-    if (err) {
-      console.error(err);
-      return;
-    }
-    x = console.log(stdout);
-    return;
-  });
-  response.send(x);
-});
-
 app.post('/syn', function(request, response){
-    var k;
-    proces.exec("rm -rf *;rm -rf .*;git clone https://github.com/ULL-ESIT-SYTW-1617/practica-despliegues-en-iaas-y-heroku-ericlucastania.git .;node app.js", (err, stdout, stderr) => {
+    
+    proces.exec("git pull origin master;node app.js", (err, stdout, stderr) => {
       if (err) {
         console.error(err);
         return;
       }
-      k = console.log(stdout);
+      
+      response.send(console.log(stdout));
     });
-    response.send(k);
+    
 });
 
 

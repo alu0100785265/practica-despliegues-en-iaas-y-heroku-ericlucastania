@@ -20,7 +20,7 @@ Una vez realizado estos pasos y previamente clonado el repositorio en el que qui
 
 Pasos a seguir:
 
-*Clonar repositr
+*Clonar repositorio de gi: ```git clone 
 
 #### Para desplegar el libro en heroku
 
@@ -43,7 +43,6 @@ Una vez terminado, en tu repositorio de Github, dentro de settings y en el apart
 algo así.
 
 ![Sincronizacion](./imgReadme/segunda.PNG)
-
 
 
 
