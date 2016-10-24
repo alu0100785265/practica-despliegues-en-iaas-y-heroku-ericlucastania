@@ -7,7 +7,7 @@ Automatizar la subida de ficheros al iaas y heroku cada vez que se haga un push 
 
 ## Como hacer un Fork del repositorio
 
-#### Para desplegar en tu máquina en el iaas 
+### Desplegar en tu máquina en el iaas 
 
 Info: El repo hace un pull de la práctica en github, por lo que la deberás tener previamente clonada
 
@@ -20,7 +20,7 @@ Una vez realizado estos pasos y previamente clonado el repositorio en el que qui
 
 Pasos a seguir:
 
-### En la maquina iaas
+#### Qué hacer en la maquina iaas
 
 * Clonar repositorio de github al iass 
 
