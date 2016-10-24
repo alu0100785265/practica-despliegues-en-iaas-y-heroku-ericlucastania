@@ -20,7 +20,7 @@ Una vez realizado estos pasos y previamente clonado el repositorio en el que qui
 
 Pasos a seguir:
 
-En la maquina iaas
+#### En la maquina iaas
 
 * Clonar repositorio de github al iass 
 
@@ -30,7 +30,7 @@ En la maquina iaas
     Ruta de cd donde quieras clonar tu repositorio
     Clonar repositorio de github a iaas: ```git clone repositorio```
 
-En local
+#### En local
     
 Una vez realizado los anteriores pasos podemos trabajar en local realizando los correspondientes cambios que sean necesarios
 en su repo,cuando hallas terminado guarda los cambios
