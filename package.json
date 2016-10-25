@@ -15,8 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ULL-ESIT-SYTW-1617/tareas-iniciales-ericlucastania.git",
-    "wiki": "git@github.com:ULL-ESIT-SYTW-1617/tareas-iniciales-ericlucastania.wiki.git"
+    "url": "git@github.com:alu0100785265/practica-despliegues-en-iaas-y-heroku-ericlucastania.git",
+    "wiki": "git@github.com:alu0100785265/practica-despliegues-en-iaas-y-heroku-ericlucastania.wiki.git"
   },
   "keywords": [
     "gitbook",
